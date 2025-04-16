@@ -1,0 +1,13 @@
+package id.co.bsi.hello_spring.dto.response;
+
+import lombok.Data;
+
+@Data
+public class HistoryResponse {
+    private String date;
+    private String type;
+    private String fromTo;
+    private String description;
+    private int amount;
+
+}
