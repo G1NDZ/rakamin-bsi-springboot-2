@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class TopupController {
     @PostMapping("api/TopUp")
     public ResponseEntity<TopupResponse> topUp(@RequestBody TopupRequest topupRequest) {
+
         TopupResponse topupResponse = new TopupResponse();
         topupResponse.setStatus("Success");
-        topupResponse.setMessage("Success Melakukan Top Up");
+        topupResponse.setMessage("Success Melakukan Top Up sebesar " + topupRequest.getAmount());
         return ResponseEntity.ok(topupResponse);
     }
 }

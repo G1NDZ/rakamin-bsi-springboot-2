@@ -18,7 +18,6 @@ public class TransferController {
         TransferResponse transferResponse = new TransferResponse();
         transferResponse.setStatus("success");
         transferResponse.setMessage("Transfer success");
-
         return ResponseEntity.ok(transferResponse);
     }
 

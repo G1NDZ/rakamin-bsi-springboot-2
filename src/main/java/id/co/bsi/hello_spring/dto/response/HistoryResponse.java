@@ -9,5 +9,4 @@ public class HistoryResponse {
     private String fromTo;
     private String description;
     private int amount;
-
 }
